@@ -5,10 +5,10 @@
     "sass": "sass ./scss/slides.scss:./css/slides.css --source-map --watch",
     "sass-once": "sass ./scss/slides.scss:./css/slides.css --source-map",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "live-server --port=4242 --open=\"./index.html\" --watch=\"markdown,scripts/\"",
+    "serve": "live-server --port=3000 --open=\"./index.html\" --watch=\"markdown,scripts/\"",
     "start": "parallelshell \"npm run serve\" \"npm run sass\"",
     "prepare": "node ./scripts/dont-touch/prepare-script.js",
-    "prettier": "prettier --config ../.prettierrc --write \"./markdown/**/*.{md,ts,js,json,html,scss}\""
+    "prettier": "prettier --config ../steps/.prettierrc --write \"./markdown/**/*.{md,ts,js,json,html,scss}\""
   },
   "license": "MIT",
   "dependencies": {
