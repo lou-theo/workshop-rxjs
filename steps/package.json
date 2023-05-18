@@ -2,7 +2,8 @@
   "name": "workshop-rxjs-exercises",
   "version": "1.0.0",
   "scripts": {
-    "prettier": "prettier --config ../.prettierrc --write \"./**/*.{md,ts,js,json,html,scss}\""
+    "start": "ts-node join-operator-2/solution.ts",
+    "prettier": "prettier --config .prettierrc --write \"./**/*.{md,ts,js,json,html,scss}\""
   },
   "author": "",
   "license": "Apache-2.0 license <https://opensource.org/licenses/Apache-2.0>",
