@@ -1,5 +1,0 @@
-marble operator_scan
-{
-    source a:               +-1-4-2-2->
-    operator scan(sum):     +-1-5-7-9->
-}

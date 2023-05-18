@@ -1,5 +1,0 @@
-marble operator_retry
-{
-    source a:           +-a-b-#
-    operator retry:     +-a-b--a-b--a-b->
-}

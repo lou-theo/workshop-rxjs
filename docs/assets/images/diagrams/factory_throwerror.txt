@@ -1,4 +1,0 @@
-marble factory_throwerror
-{
-    operator throwError(errorFactory):     +-----#
-}

@@ -1,4 +1,0 @@
-marble factory_fromevent
-{
-    operator fromEvent(button,'click'):     +-e-e-e->
-}

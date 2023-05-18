@@ -1,7 +1,6 @@
 {
-  "name": "@sfeir/school-rxjs",
-  "version": "3.0.0",
-  "description": "Sfeir School RxJS",
+  "name": "workshop-rxjs-docs",
+  "version": "1.0.0",
   "scripts": {
     "sass": "sass ./scss/slides.scss:./css/slides.css --source-map --watch",
     "sass-once": "sass ./scss/slides.scss:./css/slides.css --source-map",
@@ -11,20 +10,7 @@
     "prepare": "node ./scripts/dont-touch/prepare-script.js",
     "prettier": "prettier --config ../.prettierrc --write \"./markdown/**/*.{md,ts,js,json,html,scss}\""
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sfeir-open-source/sfeir-school-rxjs.git"
-  },
-  "keywords": [
-    "xxx",
-    "sfeir"
-  ],
-  "author": "jefbinomed",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/sfeir-open-source/sfeir-school-template/issues"
-  },
-  "homepage": "https://github.com/sfeir-open-source/sfeir-school-template",
   "dependencies": {
     "sfeir-school-theme": "^3.0.0"
   },

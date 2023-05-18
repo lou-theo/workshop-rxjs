@@ -1,4 +1,0 @@
-marble factory_interval
-{
-    operator interval(1000):     +-1-2-3-4->
-}

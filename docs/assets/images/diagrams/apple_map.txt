@@ -1,5 +1,0 @@
-marble apple_map
-{
-    source a:                      +-R-R-R-R->
-    operator map(cutInSlices):     +-S-S-S-S->
-}

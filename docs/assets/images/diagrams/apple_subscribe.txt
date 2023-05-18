@@ -1,4 +1,0 @@
-marble apple_subscribe
-{
-    source a:     +-R-R-G-R->
-}
