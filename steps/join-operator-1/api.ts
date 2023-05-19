@@ -1,10 +1,9 @@
 import { delay, Observable, of } from 'rxjs';
-import { getRandomNumber } from '../common/random';
 
 export function getAttendeesNumber(): Observable<number> {
-  return of(getRandomNumber(10, 30));
+  return of(25);
 }
 
 export function getFoodOrdersNumber(): Observable<number> {
-  return of(getRandomNumber(15, 25)).pipe(delay(500));
+  return of(22).pipe(delay(500));
 }
