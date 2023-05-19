@@ -12,7 +12,7 @@ while getopts "s" opt; do
   case $opt in
     s)
       fileToRun="solution.ts"
-      echo "Running solution file"
+      echo "====> Running solution file"
       ;;
     \?)
       echo "Invalid option: -$OPTARG" >&2
@@ -31,10 +31,16 @@ fi
 
 stepPath=$1
 
+# find the first directory that starts with the step name
 if [ ! -d "$stepPath" ]; then
-  echo "Step \"$stepPath\" does not exist."
+  stepPath=$(find . -type d -name "$1*" | head -n 1)
+fi
+
+if [ ! -d "$stepPath" ]; then
+  echo "====> Step \"$1\" does not exist."
   exit 1
 fi
 
+echo "====> Running step \"$stepPath\""
 
-npm run ts-node -- "$1"/"$fileToRun"
+npm run ts-node -- "$stepPath"/"$fileToRun"

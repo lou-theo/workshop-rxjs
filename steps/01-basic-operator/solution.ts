@@ -1,4 +1,4 @@
-import { filter, map, reduce, retry } from 'rxjs';
+import { filter, map, retry } from 'rxjs';
 import { getOrders } from './api';
 import { Order } from './models';
 
