@@ -15,7 +15,7 @@ function fundamentalsSlides() {
 }
 
 function commonPitfallsSlides() {
-  return ['common-pitfalls/forget-unsubscribe.md', 'common-pitfalls/complete-is-not-finally.md'];
+  return ['02-common-pitfalls/02-forget-unsubscribe.md', '02-common-pitfalls/04-complete-is-not-finally.md'];
 }
 
 function workshop() {
