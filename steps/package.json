@@ -2,7 +2,8 @@
   "name": "workshop-rxjs-exercises",
   "version": "1.0.0",
   "scripts": {
-    "start": "ts-node join-operator-2/solution.ts",
+    "start": "sh run-step.sh",
+    "ts-node": "ts-node",
     "prettier": "prettier --config .prettierrc --write \"./**/*.{md,ts,js,json,html,scss}\""
   },
   "author": "",
