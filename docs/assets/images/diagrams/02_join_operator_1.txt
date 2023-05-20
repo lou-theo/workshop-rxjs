@@ -1,0 +1,7 @@
+marble 02_join_operator_1
+{
+    source a          : +A|
+    source b          : +---B|
+    operator forkJoin : +----(AB)|
+    operator map      : +----(-3)|
+}
