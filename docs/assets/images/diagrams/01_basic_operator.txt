@@ -1,0 +1,7 @@
+marble 01_basic_operator
+{
+    source a       : +-A-#
+    operator retry : +-A---A-B|
+    operator filter: +-------B|
+    operator map   : +-------6|
+}
