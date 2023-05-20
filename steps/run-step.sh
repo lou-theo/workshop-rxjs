@@ -1,8 +1,8 @@
 #!/bin/sh
 
 usage() {
-  echo "Usage: ./run-step.sh [-s] [argument]"
-  echo "  argument: The name of the step to run"
+  echo "Usage: npm start -- [-s] [argument]"
+  echo "  argument: The name of the step to run (which is the name of the directory - you can write only the beginning of the name, eg: 01)"
   echo "  -s: Run the solution file instead of the exercise file"
 }
 
