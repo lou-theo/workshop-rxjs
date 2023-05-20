@@ -1,4 +1,4 @@
-# 03 - Join Operator 2
+# 03 - Join Operator 2 - Hints
 
 ## Challenge 1
 

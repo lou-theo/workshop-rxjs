@@ -1,4 +1,4 @@
-# 02 - Join Operator 1
+# 02 - Join Operator 1 - Hints
 
 ## Challenge 1
 

@@ -1,0 +1,12 @@
+marble 04_join_operator_3
+{
+    operator from         : +a-b-c|
+    operator map          :
+                          {
+                            +----A|
+                            ..+---B|
+                            ....+C|
+                          }
+    operator concatAll    : +----A---BC|
+    operator toArray      : +---------(ABC)|
+}
