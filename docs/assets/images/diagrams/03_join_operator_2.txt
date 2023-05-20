@@ -1,0 +1,12 @@
+marble 03_join_operator_2
+{
+    source a              : +ABCDEF--IJ|
+    operator debounceTime : +------F---J|
+    source b              : +-5|
+    operator map          :
+                          {
+                            .......+-------3|
+                            ..........+-1|
+                          }
+    operator switchAll    : +-----------1|
+}
