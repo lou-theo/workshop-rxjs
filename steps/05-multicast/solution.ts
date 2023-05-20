@@ -1,13 +1,18 @@
-import { ReplaySubject, retry, share } from 'rxjs';
-import { getVeryResourceIntensiveComputation } from './api';
+import { ReplaySubject, share } from 'rxjs';
+import { getAnswerToTheUltimateQuestionOfLifeTheUniverseAndEverything } from './api';
 
-const result = getVeryResourceIntensiveComputation(false).pipe(
-  retry(1),
+export const result$ = getAnswerToTheUltimateQuestionOfLifeTheUniverseAndEverything(true).pipe(
   share({
     connector: () => new ReplaySubject<number>(1),
     resetOnComplete: false,
   }),
 );
 
-result.subscribe((value) => console.log(`First subscriber: ${value}`));
-result.subscribe((value) => console.log(`Second subscriber: ${value}`));
+result$.subscribe({
+  next: (value) => console.log(`First subscriber: ${value}`),
+  error: (error) => console.log(`First subscriber: ${error}`),
+});
+result$.subscribe({
+  next: (value) => console.log(`Second subscriber: ${value}`),
+  error: (error) => console.log(`Second subscriber: ${error}`),
+});
