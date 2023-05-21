@@ -1,3 +1,5 @@
+<!-- .slide: class="with-code" -->
+
 # Oublier d'unsubscribe
 
 ```typescript [9]
@@ -22,7 +24,9 @@ Memory leaks, comportements innatendus, etc.
 
 ##==##
 
-# The classic way
+<!-- .slide: class="with-code max-height" -->
+
+# Unsubscribe - The classic way
 
 ```typescript [11-15|6|19]
 @Component({
@@ -50,7 +54,9 @@ export class Component implements OnInit, OnDestroy {
 
 ##==##
 
-# The elegant way
+<!-- .slide: class="with-code max-height" -->
+
+# Unsubscribe - The elegant way
 
 ```typescript [11,13-14|4|10,12]
 @Component({
@@ -80,9 +86,11 @@ export class Component {
 
 ##==##
 
-# The ultimate way (depuis Angular 16)
+<!-- .slide: class="with-code max-height" -->
 
-```typescript [10]
+# Unsubscribe - The ultimate way (depuis Angular 16)
+
+```typescript [11]
 @Component({
   selector: "app-component",
   template: ``,

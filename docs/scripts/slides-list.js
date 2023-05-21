@@ -16,7 +16,6 @@ export const slides = [
   "02-operators/05-lab-basic-operators.md",
   "02-operators/06-lab-join-operators.md",
   "03-common-pitfalls/00-transition.md",
-  "03-common-pitfalls/01-naming-convention.md",
   "03-common-pitfalls/02-forget-unsubscribe.md",
   "03-common-pitfalls/03-subscribe-in-subscribe.md",
   "03-common-pitfalls/04-complete-is-not-finally.md",

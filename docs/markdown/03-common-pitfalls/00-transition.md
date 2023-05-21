@@ -1,3 +1,7 @@
-<!-- .slide: class="transition-bg-green-2" -->
+<!-- .slide: class="transition-bg-green-3" -->
 
-# Les fondamentaux
+# Erreurs courantes
+
+Notes:
+
+Seule partie où on va parler Angular
