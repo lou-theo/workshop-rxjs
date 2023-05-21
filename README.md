@@ -16,6 +16,14 @@ To run the workshop, you need to have [Node.js](https://nodejs.org/en/) installe
 
 To install the workshop, go in the `steps` directory and run `npm install`.
 
+### Test installation
+
+There is a special "exercise" to test if you have installed the tools correctly.
+
+Follow the instructions in [Start a lab](#start-a-lab) with exercise name `00`.
+
+Check the [hints](steps/00-test-installation/hints.md) to see if you have the correct output (if you don't have any error, you should have the correct output).
+
 ### Start a lab
 
 To start a lab, you must be in `steps` directory. You will have access to a npm command to start a lab.
