@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "live-server --port=3000 --open=\"./index.html\" --watch=\"markdown,scripts/\"",
     "start": "parallelshell \"npm run serve\" \"npm run sass\"",
+    "generate-slide-list": "cd scripts && sh generate-slide-list.sh",
     "prepare": "node ./scripts/dont-touch/prepare-script.js",
     "prettier": "prettier --config ../steps/.prettierrc --write \"./markdown/**/*.{md,ts,js,json,html,scss}\""
   },

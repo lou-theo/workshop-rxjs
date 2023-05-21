@@ -1,27 +1,11 @@
-import { SfeirThemeInitializer } from '../web_modules/sfeir-school-theme/sfeir-school-theme.mjs';
+import { SfeirThemeInitializer } from "../web_modules/sfeir-school-theme/sfeir-school-theme.mjs";
+import { slides } from "./slides-list.js";
 
-// One method per module
-function introSlides() {
-  return [
-    '00-intro/00-TITLE.md',
-    '00-intro/01-what-is-rxjs.md',
-    '00-intro/02-reactivex.md',
-    '00-intro/03-pure-functions.md',
-  ];
-}
-
-function fundamentalsSlides() {
-  return ['01-fundamentals/00-transition.md'];
-}
-
-function commonPitfallsSlides() {
-  return ['02-common-pitfalls/02-forget-unsubscribe.md', '02-common-pitfalls/04-complete-is-not-finally.md'];
-}
+// To change the slides order / list, juste reorder / remove / add slides in the markdown directory
+// then run `npm run generate-slide-list` to update the `slides-list.js` file
 
 function workshop() {
-  return [...introSlides(), ...fundamentalsSlides(), ...commonPitfallsSlides()].map((slidePath) => {
-    return { path: slidePath };
-  });
+  return slides.map((slidePath) => ({ path: slidePath }));
 }
 
 SfeirThemeInitializer.init(workshop);
