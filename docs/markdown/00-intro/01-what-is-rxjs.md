@@ -1,6 +1,6 @@
 <!-- .slide: class="quote-slide" -->
 
-## C'est quoi RxJS ?
+# C'est quoi RxJS ?
 
 <blockquote>
 <cite>

@@ -1,0 +1,7 @@
+marble marbles_illustration
+{
+    source a       : +----->
+    source a       : +-----|
+    source a       : +-----#
+    source a       : +--A-B>
+}

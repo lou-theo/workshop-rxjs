@@ -1,3 +1,11 @@
 
 
 /*# sourceMappingURL=slides.css.map */
+
+.reveal table td, .reveal table th {
+  padding: 1em;
+}
+
+.table-fit-content {
+  width: auto!important;
+}
