@@ -1,11 +1,18 @@
-
-
 /*# sourceMappingURL=slides.css.map */
 
-.reveal table td, .reveal table th {
+.reveal table td,
+.reveal table th {
   padding: 1em;
 }
 
 .table-fit-content {
-  width: auto!important;
+  width: auto !important;
+}
+
+code:not(pre code) {
+  background: lightgrey;
+  font-weight: bolder;
+  color: black;
+  padding-left: 0.2em;
+  padding-right: 0.2em;
 }
