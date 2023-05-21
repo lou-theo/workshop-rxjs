@@ -23,4 +23,5 @@ export const slides = [
   "04-multicasting/01-subjects.md",
   "04-multicasting/02-lab-multicast.md",
   "04-multicasting/03-share-operator.md",
+  "05-conclusion/00-transition.md",
 ];
