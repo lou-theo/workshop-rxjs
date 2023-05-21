@@ -52,6 +52,3 @@ Slides are generated with Reveal.js, Markdown and a Sfeir theme.
 
 Moreover, this workshop is inspired by [Sfeir School's RxJS](https://github.com/sfeir-open-source/sfeir-school-rxjs).
 
-### Illustrations
-
-Some illustrations (the ones used for the analogy with operators) are gracefully provided by [Morine BLOCAIL](https://www.linkedin.com/in/morine-blocail/).

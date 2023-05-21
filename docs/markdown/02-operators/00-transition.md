@@ -1,3 +1,3 @@
-<!-- .slide: class="transition-bg-green-2" -->
+<!-- .slide: class="transition-bg-green-4" -->
 
-# Les fondamentaux
+# Travailler sur les flux : les opérateurs
