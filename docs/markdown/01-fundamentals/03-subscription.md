@@ -8,7 +8,8 @@
 import { getMyAwesomeObservable } from './my-awesome-observable';
 import { observer } from './my-awesome-observer';
 
-getMyAwesomeObservable().subscribe(observer);
+const myObservable$ = getMyAwesomeObservable();
+myObservable$.subscribe(observer);
 ```
 
 <!-- .element: class="big-code block" -->
@@ -17,7 +18,7 @@ getMyAwesomeObservable().subscribe(observer);
 <div class="fragment">
 
 ```typescript
-getMyAwesomeObservable().subscribe(observer);
+myObservable$.subscribe(observer);
 ```
 
 <!-- .element: class="big-code block" -->
@@ -25,6 +26,7 @@ getMyAwesomeObservable().subscribe(observer);
 </div>
 
 Notes:
+- Le `$` est une convention pour dire que c'est un observable
 - On souscrit à l'observable avec l'observer
 - On peut souscrire à un observable autant de fois qu'on veut
 
