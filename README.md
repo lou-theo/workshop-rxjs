@@ -39,6 +39,13 @@ Each lab is structured the same way:
 
 Diagrams are generated with [marblegen](https://bitbucket.org/achary/rx-marbles/src/master/) which need Python 3.
 
+For me, the command to run to generate diagrams is
+```bash
+py -m rxmarbles [marble-representation.txt]
+# [marble-representation.txt] is the file with the marble representation, you can read more about it on the marblegen documentation
+```
+But it will depend on your Python installation.
+
 ### Slides
 
 Slides are generated with Reveal.js, Markdown and a Sfeir theme.
