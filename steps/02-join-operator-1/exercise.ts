@@ -1,4 +1,4 @@
-import { Observable } from 'rxjs';
+import { Observable, of } from 'rxjs';
 
 /**
  * CONTEXTE DE L'EXERCICE :
@@ -13,7 +13,7 @@ import { Observable } from 'rxjs';
  *  Trouver un moyen de combiner les 2 observables pour avoir dans le même observable le nombre de participants et le nombre de parts commandées.
  *  Astuce: utiliser l'opérateur `tap()` pour afficher les valeurs dans la console et faciliter le debug. (`tap(console.log)`)
  */
-export const foodLeft$: Observable<unknown> = undefined;
+export const foodLeft$: Observable<unknown> = of({});
 
 /**
  * TODO: CHALLENGE 2
