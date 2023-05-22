@@ -24,6 +24,21 @@ Follow the instructions in [Start a lab](#start-a-lab) with exercise name `00`.
 
 Check the [hints](steps/00-test-installation/hints.md) to see if you have the correct output (if you don't have any error, you should have the correct output).
 
+If you are on Windows and have an error "`sh` is not recognized as an internal or external command, operable program or batch file.", you can either try with a unix compatible shell (like Git Bash) or retry with the following command :
+
+```bash
+npm run start:bash -- [-s] [argument]
+#   argument: The name of the step to run (which is the name of the directory - you can write only the beginning of the name, eg: 01)
+#  -s: Run the solution file instead of the exercise file
+```
+
+If you have an error with the shell script, check if the file `steps/run-step.sh` is correctly encoded in LF (and not CRLF).
+
+To manually convert a file from CRLF (Carriage Return + Line Feed) line endings to LF (Line Feed) line endings, you can follow these steps:
+1. Open the file in a text editor that supports line ending conversions. Many code editors, such as Visual Studio Code, Sublime Text, or Notepad++, provide this functionality.
+2. In the text editor, look for an option to change or view the line endings. In Visual Studio Code, for example, you can find it in the bottom right corner of the editor, where it displays the current line ending format. Click on it and select "LF" as the line ending format.
+3. Save the file to apply the line ending conversion. The text editor should now save the file with LF line endings instead of CRLF.
+
 ### Start a lab
 
 To start a lab, you must be in `steps` directory. You will have access to a npm command to start a lab.

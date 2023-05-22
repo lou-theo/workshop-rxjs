@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "start": "sh run-step.sh",
-    "start:bash": "bash run-step.sh",
     "start:shell": "sh run-step.sh",
+    "start:bash": "bash run-step.sh",
     "ts-node": "ts-node",
     "prettier": "prettier --config .prettierrc --write \"./**/*.{md,ts,js,json,html,scss}\""
   },
