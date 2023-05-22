@@ -81,7 +81,7 @@ fi
 separator
 
 if [ "$isTest" = true ]; then
-  npm run cross-env -- FILE_TYPE="$fileToRun" CHALLENGE="$challenge" jest "$stepPath"
+  npm run cross-env -- FILE_TYPE="$fileToRun" CHALLENGE="$challenge" jest --silent "$stepPath"
 else
   npm run ts-node -- "$stepPath"/"$fileToRun".ts
 fi
