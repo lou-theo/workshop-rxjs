@@ -1,4 +1,4 @@
 # Treat web_modules as binaries
 docs/web_modules/**/* binary
 
-* text=auto eol=lf
+* text=auto eol=lf charset=utf-8
