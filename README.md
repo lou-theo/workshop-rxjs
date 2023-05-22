@@ -24,12 +24,10 @@ Follow the instructions in [Start a lab](#start-a-lab) with exercise name `00`.
 
 Check the [hints](steps/00-test-installation/hints.md) to see if you have the correct output (if you don't have any error, you should have the correct output).
 
-If you are on Windows and have an error "`sh` is not recognized as an internal or external command, operable program or batch file.", you can either try with a unix compatible shell (like Git Bash) or retry with the following command :
+If you are on Windows and have an error "`sh` is not recognized as an internal or external command, operable program or batch file.", you can either try with a unix compatible shell (like Git Bash) or retry with the following command (you can see options details in [Start a lab](#start-a-lab)) :
 
 ```bash
-npm run start:bash -- [-s] [argument]
-#   argument: The name of the step to run (which is the name of the directory - you can write only the beginning of the name, eg: 01)
-#  -s: Run the solution file instead of the exercise file
+npm run start:bash -- [-s] [-t] [-c N] [argument]
 ```
 
 If you have an error with the shell script, check if the file `steps/run-step.sh` is correctly encoded in LF (and not CRLF).
@@ -45,9 +43,11 @@ To start a lab, you must be in `steps` directory. You will have access to a npm 
 
 Usage :
 ```bash
-npm start -- [-s] [argument]
-#   argument: The name of the step to run (which is the name of the directory - you can write only the beginning of the name, eg: 01)
-#  -s: Run the solution file instead of the exercise file
+npm start -- [-s] [-t] [-c N] [argument]
+#  argument: The name of the step to run (which is the name of the directory - you can write only the beginning of the name, eg: 01)
+#  -s  : Run the solution file instead of the exercise file
+#  -t  : Run tests on exercise or solution file (if '-s' is passed, it will run the tests on the solution file)
+#  -c N: (ignored if not with '-t') Run the tests for the challenge 'N' ('N' must be one of the challenge's number indicated in the exercise file)
 ```
 
 Each lab is structured the same way:
@@ -55,6 +55,14 @@ Each lab is structured the same way:
 - `api.ts`: The file with the "API" to use (functions you need to call but not to edit)
 - `hints.md`: A markdown file with hints to help you _(if needed)_
 - `solution.ts`: The file with the solution
+- `tests.ts`: The file with tests to help you know if you are on the right track _(for steps 00 to 03)_
+
+### Test your progress
+
+As you may have noticed, there are tests in most of the exercises. 
+You can run them with the challenge number to see if you are in line with expectations.
+
+/!\ Disclaimer: These tests are quite simple and are not exhaustive, so you can have a false positive (or negative) result. There are so many ways to solve a problem !
 
 ## Resources used
 
