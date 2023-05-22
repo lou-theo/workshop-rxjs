@@ -1,3 +1,6 @@
 import { of } from 'rxjs';
 
-of("You've done it! You are definitely ready for the workshop!").subscribe(console.log);
+export const sentence = "You've done it! You are definitely ready for the workshop!";
+export const helloWorld$ = of(sentence);
+
+helloWorld$.subscribe(console.log);
